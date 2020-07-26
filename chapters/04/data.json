@@ -1,0 +1,14 @@
+{
+  "quoted-key": "string value",
+  "1": 1,
+  "2": true,
+  "3": [
+    1,
+    2,
+    3
+  ],
+  "object": {
+    "key": "value",
+    "3": []
+  }
+}
