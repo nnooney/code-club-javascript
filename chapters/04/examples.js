@@ -61,10 +61,17 @@ let vegetables = {
   white: ["potato", "cauliflower"]
 }
 
+[["orange", "carrot"], ["green", ["spinach", "broccoli"]], ["white", ["potato", "cauliflower"]]]
+
 let keys = Object.keys(vegetables);
 console.log(keys);
 let values = Object.values(vegetables);
 console.log(values);
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+
+
 
 let shallowCopy = {};
 Object.assign(shallowCopy, vegetables);
