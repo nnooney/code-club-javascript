@@ -1,3 +1,14 @@
+// Two functions are provided in the chapter: countBy and characterScript.
+//  - characterScript accepts a number and returns the script object which
+//    contains that number.
+//  - countBy takes a string and a function parameter [1] and returns an array
+//    of countResults [2].
+//    - [1]: function is a function that accepts a character and returns a
+//      string indicating the group it should be counted with.
+//    - [2]: countResult is an object with the following properties:
+//      - name: the name of the group (returned from [1])
+//      - count: the number of characters belonging to that group
+
 function dominantDirection(text) {
   // This is the same start as the textScripts example, except that we want to
   // return an object with the direction and count instead of the name and

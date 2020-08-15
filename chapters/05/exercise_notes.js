@@ -91,3 +91,23 @@ nth({ value: "pink", rest: { value: "purple", rest: { value: "blue", rest: null 
 nth({ value: "purple", rest: { value: "blue", rest: null } }, 4)
 nth({ value: "blue", rest: null }, 3)
 nth(null, 2)
+
+// Ways to build arrays:
+// Immediately construct it.
+let literal_array = [1, 2, 3, 4, 5];
+
+// Build it by repeatedly calling array.push()
+let push_array = [];
+for (let i = 1; i <= 5; i++) {
+  push_array.push(i);
+}
+
+// Build it by combining two arrays
+let partial_array_1 = [1, 2, 3];
+let partial_array_2 = [4, 5];
+let concat_array = [];
+concat_array.concat(partial_array_1, partial_array_2);
+
+// Build it by extracting from another array
+let bigger_array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let slice_array = bigger_array.slice(1, 6);
