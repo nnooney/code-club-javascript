@@ -5,3 +5,8 @@ const sayHello = function () {
 }
 
 sayHello();
+
+// Use the node.js debugger, and show the following:
+// 1. Using the debug console to see output
+// 2. Setting a breakpoint
+// 3. Seeing variables change
